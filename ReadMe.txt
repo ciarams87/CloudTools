@@ -3,7 +3,7 @@ __author__ = "Ciara Stacke"
 __version__ = "1.0.1"
 __maintainer__ = "Ciara Stacke"
 __email__ = "ciara.stacke@mycit.ie"
-__status__ = "Production"
+__status__ = "Alpha"
 
 Welcome to the CloudTools package. In order to run the program,
 there is some initial set-up configuration. The program also 
