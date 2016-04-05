@@ -2,7 +2,7 @@ Read Me:
 __author__ = "Ciara Stacke"
 __version__ = "1.0.1"
 __maintainer__ = "Ciara Stacke"
-__email__ = "ciara.stacke@mycit.ie"
+__email__ = "ciarastacke@hotmail.com"
 __status__ = "Alpha"
 
 Welcome to the CloudTools package. In order to run the program,
