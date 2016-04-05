@@ -23,7 +23,7 @@ class CloudWatch:
         sns = boto.sns.connect_to_region('eu-west-1')
         topic_name = 'cpu_alarm'+instance_id
         new_sns_topic = sns.create_topic(topic_name)
-
+        # nested function for retrieving sns arn from created topic
         def get_sns_arn():
             for key, value in new_sns_topic.iteritems():
                 for k, v in value.iteritems():
