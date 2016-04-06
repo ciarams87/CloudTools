@@ -6,14 +6,15 @@ import libcloud
 from libcloud.storage.providers import get_driver as get_storage_driver
 from libcloud.storage.types import Provider as StorageProvider
 
-auth_username = 'ciara.stacke'
-auth_password = '07rbzLXUolAO6v2e'
-auth_url = 'http://128.136.179.2:5000'
-project_name = 'ciara.stacke'
-region_name = 'RegionOne'
+auth_username = '' #enter username
+auth_password = '' #enter password
+auth_url = 'http://' #enter url
+project_name = '' #enter the name of the project
+region_name = '' #enter the region name
 
+#if security cert available, enter the path and delete/comment out next line
 libcloud.security.VERIFY_SSL_CERT = False
-#ssl_creds = libcloud.security.CA_CERTS_PATH = ['C:\Users\Ciara\ca-bundle.crt']
+#ssl_creds = libcloud.security.CA_CERTS_PATH = ['C:\Example\ca-bundle.crt']
 
 
 class OSConnections:
