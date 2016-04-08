@@ -1,4 +1,4 @@
-# class for managing OpenStack Connections
+# class for creating OpenStack Connections
 import libcloud.security
 from libcloud.compute.types import Provider as ComputeProvider
 from libcloud.compute.providers import get_driver as get_compute_driver
