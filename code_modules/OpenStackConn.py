@@ -1,4 +1,4 @@
-# class for creating OpenStack Connections
+# class for managing OpenStack Connections
 import libcloud.security
 from libcloud.compute.types import Provider as ComputeProvider
 from libcloud.compute.providers import get_driver as get_compute_driver
@@ -12,15 +12,15 @@ auth_url = 'http://' #enter url
 project_name = '' #enter the name of the project
 region_name = '' #enter the region name
 
-#if security cert available, enter the path and delete/comment out next line
 libcloud.security.VERIFY_SSL_CERT = False
-#ssl_creds = libcloud.security.CA_CERTS_PATH = ['C:\Example\ca-bundle.crt']
+#ssl_creds = libcloud.security.CA_CERTS_PATH = ['C:\Users\{Name\ca-bundle.crt}']
 
 
+# noinspection PyMethodMayBeStatic
 class OSConnections:
 
     def __init__(self):
-        """constructer"""
+        """constructor"""
 
     def os_compute_conn(self):
         """ Create and return a OpenStack compute driver object """
