@@ -7,8 +7,7 @@ from boto import config
 import boto.ec2.autoscale
 import boto.cloudtrail
 
-'''Define the access key id and secret access 
-key as set in the boto configuration file'''
+'''Define the access key id and secret access key as set in the boto configuration file'''
 aws_access_key_id = config.get('Credentials', 'aws_access_key_id')
 # aws_access_key_id = ""
 aws_secret_access_key = config.get('Credentials', 'aws_secret_access_key')
@@ -21,7 +20,7 @@ class Connections:
 
     def __init__(self):
         # Connections Constructor
-        self.region = 'eu-west-1'
+        self.region = 'eu-west-1'  # change as appropriate
 
     def ec2_connection(self):
         # Creates and returns an EC2 Connection object
