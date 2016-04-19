@@ -6,6 +6,7 @@ from boto.ec2.autoscale import ScalingPolicy
 from boto.ec2.cloudwatch import MetricAlarm
 
 
+# noinspection PyMethodMayBeStatic
 class AutoScale:
     def __init__(self):
         """constructor for AutoScale class"""
@@ -126,6 +127,10 @@ line 58: Creates the alarm by calling create_alarm method on cloudwatch connecti
 line 59-62: If alarm creation is successful; print message; if not, print error message
 
 lines 64-70: Lists all current launch configurations associated with this account. If configs are
+            found, loops through list and prints name of each launch config. Otherwise, prints error
+            message.
+
+lines 72-78: Lists all current auto-scaling groups associated with this account. If groups are
             found, loops through list and prints name of each launch config. Otherwise, prints error
             message.
 """
